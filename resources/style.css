@@ -4,22 +4,44 @@
     font-family: "Roboto Mono", monospace;
     box-sizing: border-box;
     font-size: 16px;
+    --- theme-color: #007bff;
 }
 
 header {
     display: inline-flex;
     width: 100%;
+    flex-wrap: nowrap;
+    position: sticky;
+    top: 0%;
+
 }
 
 .logo-box {
-    width: 50%;
+    width: 20%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    background-color: darkblue;
-    color: white;
+    background-color: #f1f1f1;
 }
 
+.logo-box img {
+    width: 100px;
+    height: 100px;
+}
+
+.nav-box {
+    width: 80%;
+    display: inline-flex;
+    justify-content: flex-end;
+    background-color: #f1f1f1;
+}
+ul li a {
+    list-style: inline-block;
+    display: inline-flex;
+    padding: 10px;=
+    text-decoration: none;
+    color: black;
+}
 
 /* MAIN CONTAINER WITH RELATIVE POSITIONING FOR ABSOLUTE FOOTER */ 
 .main-container {
