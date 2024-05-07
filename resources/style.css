@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Roboto Mono", monospace
+    font-family: "Roboto Mono", monospace;
+    font-size: 16px;
 
 }
 
@@ -9,12 +10,10 @@ header {
 }
 
 .logo-box {
-    align-content: flex-start;
+
 }
 
-.nav-box {
-    display: flex;
-    flex-direction: column;
+nav {
 
 }
 
@@ -61,9 +60,37 @@ main {
 }
 
 .item {
-    width: 300px;
-    height: 100px;
-    margin: 10px;
-    border: 3px solid #f1f1f1;
+    width: 200px;
+    height: auto;
+    margin: 20px;
+    padding: 10px;
+    border: 3px solid black;
     background-color: gray;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.item p {
+    text-align: left;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    background-color: lightblue;
+    border: 3px solid black;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: darkblue;
+    color: white;
 }
