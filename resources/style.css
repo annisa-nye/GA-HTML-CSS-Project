@@ -7,7 +7,20 @@
 }
 
 header {
+    display: inline-flex;
+    width: 100%;
 }
+
+.logo-box {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+    color: white;
+}
+
+
 /* MAIN CONTAINER WITH RELATIVE POSITIONING FOR ABSOLUTE FOOTER */ 
 .main-container {
     position: relative;
