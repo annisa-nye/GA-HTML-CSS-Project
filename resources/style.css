@@ -49,7 +49,7 @@ main {
 }
 
 .item-container {
-    height: 300px;
+    height: auto;
     width: 60%;
     background-color: lightblue;
     display: flex;
