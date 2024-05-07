@@ -11,7 +11,7 @@ header {
 /* MAIN CONTAINER WITH RELATIVE POSITIONING FOR ABSOLUTE FOOTER */ 
 .main-container {
     position: relative;
-    min-height: 100vh; /* ENSURES THE CONTAINER IS AT LEAST  THE HEIGHT OF THE VIEWPORT */ 
+    min-height: 100vh; /* ENSURES THE CONTAINER IS AT LEAST THE HEIGHT OF THE VIEWPORT */ 
 }
 
     .logo-box {
