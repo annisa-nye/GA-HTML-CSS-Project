@@ -23,7 +23,7 @@ nav {
 }
 
 h1 {
-    padding: 10px;
+    padding: 20px;
 }
 
 main {
@@ -53,6 +53,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 
 }
 
