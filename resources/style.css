@@ -4,7 +4,11 @@
     font-family: "Roboto Mono", monospace;
     box-sizing: border-box;
     font-size: 16px;
-    --- theme-color: #007bff;
+}
+
+
+body {
+   background: linear-gradient(to bottom, #5356FF, #378CE7, #67C6E3, #DFF5FF); 
 }
 
 header {
@@ -151,7 +155,7 @@ footer {
 }
 
 
-.footer-box {
+footer-box {
     display: inline-block;
 }
 
@@ -168,6 +172,14 @@ table {
 .cart-info {
     display: flex;
     flex-wrap: wrap;
+
+}
+
+.cart-info img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
 }
 
 th {
