@@ -6,6 +6,11 @@
     font-size: 16px;
 }
 
+
+body {
+   background: linear-gradient(to bottom, #5356FF, #378CE7, #67C6E3, #DFF5FF); 
+}
+
 header {
     display: inline-flex;
     width: 100%;
@@ -150,7 +155,7 @@ footer {
 }
 
 
-.footer-box {
+footer-box {
     display: inline-block;
 }
 
