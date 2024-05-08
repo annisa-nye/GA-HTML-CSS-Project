@@ -4,7 +4,6 @@
     font-family: "Roboto Mono", monospace;
     box-sizing: border-box;
     font-size: 16px;
-    --- theme-color: #007bff;
 }
 
 header {
@@ -168,6 +167,14 @@ table {
 .cart-info {
     display: flex;
     flex-wrap: wrap;
+
+}
+
+.cart-info img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
 }
 
 th {
