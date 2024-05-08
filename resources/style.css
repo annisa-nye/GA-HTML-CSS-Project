@@ -155,3 +155,25 @@ footer {
     display: inline-block;
 }
 
+
+.cart-page {
+    width: 80px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background-color: #007bff;
+    font-weight: normal;
+}
