@@ -3,12 +3,16 @@
     padding: 0;
     font-family: "Roboto Mono", monospace;
     box-sizing: border-box;
-    font-size: 16px;
 }
 
 
 body {
+<<<<<<< HEAD
     background: linear-gradient(to bottom, #5356FF, #378CE7, #67C6E3, #DFF5FF);
+=======
+   background: linear-gradient(to bottom, #5356FF, #378CE7, #67C6E3, #DFF5FF);
+   font-size: 16px;
+>>>>>>> 8593e624ed0ff1761f4d7e62abe1f3af535d296f
 }
 
 header {
@@ -16,7 +20,6 @@ header {
     width: 100%;
     flex-wrap: nowrap;
     position: sticky;
-    top: 0%;
 
 }
 
@@ -61,6 +64,13 @@ nav {}
 
 h1 {
     padding: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    padding: 20px;
+    font-weight: bold;
+
 }
 
 main {
@@ -90,13 +100,14 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
+    text-align: center;
 
 }
 
 .item-container {
     height: auto;
-    width: 60%;
+    width: 80%;
     background-color: lightblue;
     display: flex;
     flex-wrap: wrap;
@@ -109,33 +120,40 @@ main {
 }
 
 .item {
-    width: 200px;
-    height: auto;
+    width: 250px;
+    height: 250px;
     margin: 20px;
     padding: 10px;
     border: 3px solid black;
     background-color: lightgray;
-}
-
-p {
-    text-align: center;
-    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .item p {
     text-align: left;
-    font-size: 16px;
+    font-size: 0.75em;
 }
 
 button {
+    margin: 5px;
     width: 100%;
     height: 50px;
     background-color: lightblue;
     border: 3px solid black;
     color: black;
-    font-size: 16px;
+    font-size: 1em;
     cursor: pointer;
     transition: transform 200ms ease-in-out;
+}
+
+.item-5 h3 {
+    color: darkblue;
+}
+.item-5 p {
+    padding: 0;
+    margin: 0;
 }
 
 button:hover {
@@ -191,6 +209,7 @@ th {
     font-weight: normal;
 }
 
+<<<<<<< HEAD
 @media (max-width: 768px) {
     .item-container {
         flex-direction: column;
@@ -212,3 +231,5 @@ th {
         padding: 5px;
     }
 }
+=======
+>>>>>>> 8593e624ed0ff1761f4d7e62abe1f3af535d296f
