@@ -8,13 +8,14 @@
 
 body {
    background: linear-gradient(to bottom, #5356FF, #378CE7, #67C6E3, #DFF5FF);
+   font-size: 16px;
 }
 
 header {
     display: inline-flex;
     width: 100%;
     flex-wrap: nowrap;
-    position: sticky;
+
 }
 
 .logo-box {
@@ -44,16 +45,25 @@ ul li a {
     color: black;
 }
 
+.nav-box li a {
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-box li a:hover {
+    color: darkblue;
+}
+
 /* MAIN CONTAINER WITH RELATIVE POSITIONING FOR ABSOLUTE FOOTER */ 
 .main-container {
     position: relative;
     min-height: 100vh; /* ENSURES THE CONTAINER IS AT LEAST THE HEIGHT OF THE VIEWPORT */ 
 }
 
-
 h1 {
     padding: 20px;
     font-weight: bold;
+    font-size: 3rem;
 }
 
 h2 {
@@ -63,6 +73,7 @@ h2 {
 }
 
 main {
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -110,7 +121,7 @@ main {
 
 .item {
     width: 300px;
-    height: 300px;
+    height: 350px;
     margin: 20px;
     padding: 10px;
     border: 3px solid black;
@@ -145,6 +156,12 @@ button {
     transition: transform 200ms ease-in-out;
 }
 
+button:hover {
+    transform: scale(1.05);
+    background-color: darkblue;
+    color: white;
+}
+
 .item-5 {
     border: 3px solid darkblue;
 }
@@ -161,11 +178,7 @@ button {
     object-fit: cover;
 }
 
-button:hover {
-    transform: scale(1.05);
-    background-color: darkblue;
-    color: white;
-}
+
 
 footer {
     bottom: 0; /* PLACE AT THE BOTTOM OF THE PARENT CONTAINER */
