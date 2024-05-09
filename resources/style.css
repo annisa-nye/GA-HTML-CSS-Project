@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Roboto Mono", monospace;
+    font-family: monospace;
     box-sizing: border-box;
 }
 
@@ -15,7 +15,6 @@ header {
     display: inline-flex;
     width: 100%;
     flex-wrap: nowrap;
-    position: sticky;
 
 }
 
@@ -46,23 +45,25 @@ ul li a {
     color: black;
 }
 
+.nav-box li a {
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-box li a:hover {
+    color: darkblue;
+}
+
 /* MAIN CONTAINER WITH RELATIVE POSITIONING FOR ABSOLUTE FOOTER */ 
 .main-container {
     position: relative;
     min-height: 100vh; /* ENSURES THE CONTAINER IS AT LEAST THE HEIGHT OF THE VIEWPORT */ 
 }
 
-    .logo-box {
-
-}
-
-nav {
-
-}
-
 h1 {
     padding: 20px;
     font-weight: bold;
+    font-size: 3rem;
 }
 
 h2 {
@@ -72,6 +73,7 @@ h2 {
 }
 
 main {
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -105,7 +107,7 @@ main {
 
 .item-container {
     height: auto;
-    width: 80%;
+    width: 90%;
     background-color: lightblue;
     display: flex;
     flex-wrap: wrap;
@@ -118,8 +120,8 @@ main {
 }
 
 .item {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 350px;
     margin: 20px;
     padding: 10px;
     border: 3px solid black;
@@ -127,6 +129,14 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    object-fit: contain;
+}
+
+.item img {
+    width: 50%;
+    height: auto%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .item p {
@@ -146,7 +156,17 @@ button {
     transition: transform 200ms ease-in-out;
 }
 
-.item-5 h3 {
+button:hover {
+    transform: scale(1.05);
+    background-color: darkblue;
+    color: white;
+}
+
+.item-5 {
+    border: 3px solid darkblue;
+}
+
+.item-5 h5 {
     color: darkblue;
 }
 .item-5 p {
@@ -154,11 +174,11 @@ button {
     margin: 0;
 }
 
-button:hover {
-    transform: scale(1.05);
-    background-color: darkblue;
-    color: white;
+.item-1 img {
+    object-fit: cover;
 }
+
+
 
 footer {
     bottom: 0; /* PLACE AT THE BOTTOM OF THE PARENT CONTAINER */
@@ -173,14 +193,24 @@ footer-box {
     display: inline-block;
 }
 
-
 .cart-page {
-    width: 80px auto;
+    width: 100%;    
+
+}
+
+.cart-container: {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
+    width: 300px;
+
 }
 
 .cart-info {

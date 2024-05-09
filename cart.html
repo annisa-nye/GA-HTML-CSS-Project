@@ -1,38 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en">    
 <head>
     <meta charset="UTF-8">
-    <title>Shopping Cart</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML/CSS Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./resources/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-
+ 
 <body>
     <header class="header-outer">
         <a href="./index.html" class="logo-box">
-            <img class="logo" src="./resources/logo.png" alt="Logo">
+                <img class="logo" src="./resources/logo.png" alt="logo">
         </a>
-        <nav class="nav-box">
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./cart.html">Cart</a>
-                </li>
-            </ul>
-        </nav>
+            <nav class="nav-box">   
+                <ul class="nav justify-content-end align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cart.html">Cart</a>
+                    </li>
+                    </li>
+                </ul>
+            </nav>
     </header>
-    <main class="min-h-[90vh]">
-        <div class="small-container cart-page">
+    <main class="cart-page">
+        <div class="cart-container">
             <table class="table">
                 <thead>
                     <tr>
-                        <th>Product</th>
-                        <th>Quantity</th>
-                        <th>Subtotal</th>
-                        <th>Actions</th>
+                        <th><strong>Product</strong></th>
+                        <th><strong>Quantity</strong></th>
+                        <th><strong>Subtotal</strong></th>
+                        <th><strong></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -40,17 +42,17 @@
                     <tr>
                         <td>
                             <div class="cart-info">
-                                <img src="./resources/barefoot-dreams-socks.jpeg" alt="Product 1">
+                                <img src="./resources/dream.png" alt="dream socks">
                                 <div>
-                                    <p>Product 1</p>
-                                    <small>Price: $6.00</small>
+                                    <p>Dream Team</p>
+                                    <small>$8.99</small>
                                 </div>
                             </div>
                         </td>
                         <td class="text-center">
-                            <input type="number" value="2" min="1" class="form-control" style="width: 60px;">
+                            <input type="number" value="1" min="1" max="3" class="form-control" style="width: 60px;">
                         </td>
-                        <td>$12.00</td>
+                        <td>$8.99</td>
                         <td>
                             <button class="btn btn-outline-danger">Remove</button>
                         </td>
@@ -60,17 +62,17 @@
                     <tr>
                         <td>
                             <div class="cart-info">
-                                <img src="./resources/ImageHandler.jpeg" alt="Product 2">
+                                <img src="./resources/bearly-there.png" alt="bear socks">
                                 <div>
-                                    <p>Product 2</p>
-                                    <small>Price: $7.00</small>
+                                    <p>Bearly There</p>
+                                    <small>$8.99</small>
                                 </div>
                             </div>
                         </td>
                         <td class="text-center">
-                            <input type="number" value="1" min="1" class="form-control" style="width: 60px;">
+                            <input type="number" value="1" min="1" max="3" class="form-control" style="width: 60px;">
                         </td>
-                        <td>$7.00</td>
+                        <td>$8.99</td>
                         <td>
                             <button class="btn btn-outline-danger">Remove</button>
                         </td>
@@ -80,17 +82,17 @@
                     <tr>
                         <td>
                             <div class="cart-info">
-                                <img src="./resources/TheFoozie-32_6843f935-f565-4a3e-8cf8-6a88dec8d3de.jpeg" alt="Product 3">
+                <img src="./resources/customise.png" alt="customise socks">
                                 <div>
-                                    <p>Product 3</p>
-                                    <small>Price: $5.00</small>
+                                    <p>Customise Me</p>
+                                    <small>$9.99</small>
                                 </div>
                             </div>
                         </td>
                         <td class="text-center">
-                            <input type="number" value="3" min="1" class="form-control" style="width: 60px;">
+                            <input type="number" value="2" min="1" class="form-control" style="width: 60px;">
                         </td>
-                        <td>$15.00</td>
+                        <td>$19.98</td>
                         <td>
                             <button class="btn btn-outline-danger">Remove</button>
                         </td>
@@ -99,9 +101,9 @@
                 <tfoot>
                     <tr>
                         <td></td>
-                        <td></td>
                         <td><strong>Total:</strong></td>
-                        <td>$34</td>
+                        <td>$37.96</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td colspan="4" class="text-center">
@@ -112,9 +114,11 @@
             </table>
         </div>
     </main>
-    <footer class="footer-box">
-        <p> Annisa Hannah Keturah Max 2024 © </p>
+    <footer>
+        <div class="footer-box">
+            <p> Keturah Hannah Annisa Max 2024 © </p>
+        </div>
     </footer>
-</body>
-
-</html>
+    </body>
+    
+    </html>
