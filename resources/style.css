@@ -52,13 +52,6 @@ ul li a {
     min-height: 100vh; /* ENSURES THE CONTAINER IS AT LEAST THE HEIGHT OF THE VIEWPORT */ 
 }
 
-    .logo-box {
-
-}
-
-nav {
-
-}
 
 h1 {
     padding: 20px;
@@ -146,6 +139,10 @@ button {
     transition: transform 200ms ease-in-out;
 }
 
+.item-5 {
+    border: 3px solid darkblue;
+}
+
 .item-5 h3 {
     color: darkblue;
 }
@@ -173,14 +170,24 @@ footer-box {
     display: inline-block;
 }
 
-
 .cart-page {
-    width: 80px auto;
+    width: 100%;    
+
+}
+
+.cart-container: {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
+    width: 300px;
+
 }
 
 .cart-info {
