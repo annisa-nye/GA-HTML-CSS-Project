@@ -204,3 +204,47 @@ th {
     font-weight: normal;
 }
 
+
+/* Add responsive design rules here */
+
+/* For screens that are 768px wide or less (tablets and below) */
+@media only screen and (max-width: 768px) {
+    .nav-box {
+        /* Change the navigation layout for smaller screens */
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .nav-item {
+        /* Make the navigation items stack vertically */
+        margin-bottom: 10px;
+    }
+
+    .item-container {
+        /* Adjust the item container width for smaller screens */
+        width: 90%;
+    }
+
+    .item {
+        /* Adjust the item width for smaller screens */
+        width: 150px;
+    }
+}
+
+/* For screens that are 1024px wide or less (small laptops and below) */
+@media only screen and (max-width: 1024px) {
+    .heading-box {
+        /* Adjust heading-box styling for smaller screens */
+        padding: 10px;
+    }
+
+    .sub-heading-box {
+        /* Adjust sub-heading-box styling for smaller screens */
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+
