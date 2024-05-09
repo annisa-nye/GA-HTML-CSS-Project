@@ -38,25 +38,27 @@ header {
     justify-content: flex-end;
     background-color: #f1f1f1;
 }
-
 ul li a {
     list-style: inline-block;
     display: inline-flex;
-    padding: 10px;
-    =text-decoration: none;
+    padding: 10px;=
+    text-decoration: none;
     color: black;
 }
 
-/* MAIN CONTAINER WITH RELATIVE POSITIONING FOR ABSOLUTE FOOTER */
+/* MAIN CONTAINER WITH RELATIVE POSITIONING FOR ABSOLUTE FOOTER */ 
 .main-container {
     position: relative;
-    min-height: 100vh;
-    /* ENSURES THE CONTAINER IS AT LEAST THE HEIGHT OF THE VIEWPORT */
+    min-height: 100vh; /* ENSURES THE CONTAINER IS AT LEAST THE HEIGHT OF THE VIEWPORT */ 
 }
 
-.logo-box {}
+    .logo-box {
 
-nav {}
+}
+
+nav {
+
+}
 
 h1 {
     padding: 20px;
@@ -159,14 +161,11 @@ button:hover {
 }
 
 footer {
-    bottom: 0;
-    /* PLACE AT THE BOTTOM OF THE PARENT CONTAINER */
-    width: 100%;
-    /* ENSURE IT SPANS THE FULL WIDTH OF THE CONTAINER */
+    bottom: 0; /* PLACE AT THE BOTTOM OF THE PARENT CONTAINER */
+    width: 100%; /* ENSURE IT SPANS THE FULL WIDTH OF THE CONTAINER */
     text-align: center;
     background-color: #f1f1f1;
-    padding: 10px;
-    /* PADDING FOR SOME SPACING */
+    padding: 10px; /* PADDING FOR SOME SPACING */
 }
 
 
@@ -206,11 +205,6 @@ th {
 }
 
 
-@media (max-width: 768px) {
-    .item-container {
-        flex-direction: column;
-        align-items: center;
-
 /* Add responsive design rules here */
 
 /* For screens that are 768px wide or less (tablets and below) */
@@ -229,23 +223,10 @@ th {
 
     .item-container {
         /* Adjust the item container width for smaller screens */
+        width: 90%;
     }
 
     .item {
-        width: 80%;
-        margin: 10px auto;
-        padding: 10px;
-    }
-
-    header {
-        padding: 5px;
-    }
-
-    footer {
-        padding: 5px;
-    }
-}
-
         /* Adjust the item width for smaller screens */
         width: 150px;
     }
@@ -265,3 +246,5 @@ th {
         text-align: left;
     }
 }
+
+
